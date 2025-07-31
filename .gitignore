@@ -71,3 +71,6 @@ out/
 
 # Vite
 .vite/ 
+
+# Self-use documents
+DEPLOYMENT.md
