@@ -20,7 +20,7 @@ function App() {
         </div>
         
         {/* 右侧区域：Toolbar */}
-        <div className="lg:w-auto lg:flex-shrink-0">
+        <div className="lg:w-60 lg:flex-shrink-0">
           <Toolbar onExport={handleExport} />
         </div>
       </main>
