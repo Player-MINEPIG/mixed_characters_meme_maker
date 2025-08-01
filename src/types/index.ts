@@ -1,3 +1,9 @@
+// Game related types
+export interface Game {
+  name: string;
+  iconUrl: string;
+}
+
 // 角色相关类型
 export interface Character {
   id: string;

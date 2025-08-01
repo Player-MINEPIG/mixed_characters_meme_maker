@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Canvas } from './Canvas'
 import { CharacterSelector } from '../CharacterSelector/CharacterSelector'
-import { Toolbar } from '../Toolbar/Toolbar'
 import { Template, Character, CharacterPlacement } from '@/types'
 
 export const MemeEditor: React.FC = () => {
@@ -65,32 +64,23 @@ export const MemeEditor: React.FC = () => {
     }
   }
 
-  const handleExport = () => {
-    // TODO: 实现导出功能
-    console.log('导出梗图')
-  }
-
   return (
-    <div className="flex flex-col lg:flex-row gap-6">
-      <div className="flex-1">
-        <Canvas
-          template={template}
-          characters={characters}
-          onAreaClick={handleAreaClick}
-          selectedArea={selectedArea}
-        />
-      </div>
+    <div className="relative">
+      <Canvas
+        template={template}
+        characters={characters}
+        onAreaClick={handleAreaClick}
+        selectedArea={selectedArea}
+      />
       
-      <div className="lg:w-80 space-y-4">
-        <Toolbar onExport={handleExport} />
-        
-        {showCharacterSelector && (
+      {showCharacterSelector && (
+        <div className="absolute top-4 right-4 z-10">
           <CharacterSelector
             onSelect={handleCharacterSelect}
             onClose={() => setShowCharacterSelector(false)}
           />
-        )}
-      </div>
+        </div>
+      )}
     </div>
   )
 } 

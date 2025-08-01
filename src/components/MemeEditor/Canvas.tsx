@@ -27,7 +27,6 @@ export const Canvas: React.FC<CanvasProps> = ({
     <div className="card">
       <div className="mb-4">
         <h3 className="text-lg font-semibold text-gray-900">{template.name}</h3>
-        <p className="text-sm text-gray-600">点击区域选择角色</p>
       </div>
       
       <Stage width={template.width} height={template.height}>
