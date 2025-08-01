@@ -21,7 +21,7 @@ export const CharacterSelector: React.FC<CharacterSelectorProps> = ({
       {
         id: '1',
         name: '角色A',
-        imageUrl: '/characters/character-a.png',
+        imageUrl: './characters/character-a.png',
         category: '主角',
         tags: ['主角', '剑士'],
         source: '游戏A',
@@ -30,7 +30,7 @@ export const CharacterSelector: React.FC<CharacterSelectorProps> = ({
       {
         id: '2',
         name: '角色B',
-        imageUrl: '/characters/character-b.png',
+        imageUrl: './characters/character-b.png',
         category: '配角',
         tags: ['配角', '法师'],
         source: '游戏A',
@@ -117,7 +117,7 @@ export const CharacterSelector: React.FC<CharacterSelectorProps> = ({
                 alt={character.name}
                 className="w-full h-full object-cover"
                 onError={(e) => {
-                  e.currentTarget.src = '/placeholder-character.png'
+                  e.currentTarget.src = './placeholder-character.png'
                 }}
               />
             </div>

@@ -1,6 +1,8 @@
 import { Game } from "@/types";
 import { GameCard } from "./GameCard";
 
+
+
 interface GameSelectorProps {
   games?: Game[];
 }
@@ -10,43 +12,43 @@ export const GameSelector: React.FC<GameSelectorProps> = ({ games = [] }) => {
   const defaultGames: Game[] = [
     {
       name: "原神",
-      iconUrl: "/game-icons/genshin-icon.png"
+      iconUrl: "./game-icons/genshin-icon.png"
     },
     {
       name: "崩坏：星穹铁道",
-      iconUrl: "/game-icons/star-rail-icon.png"
+      iconUrl: "./game-icons/star-rail-icon.png"
     },
     {
       name: "明日方舟",
-      iconUrl: "/game-icons/arknights-icon.png"
+      iconUrl: "./game-icons/arknights-icon.png"
     },
     {
       name: "placeholder",
-      iconUrl: "/game-icons/placeholder-icon.png"
+      iconUrl: "./game-icons/placeholder-icon.png"
     },
     {
       name: "placeholder",
-      iconUrl: "/game-icons/placeholder-icon.png"
+      iconUrl: "./game-icons/placeholder-icon.png"
     },
     {
       name: "placeholder",
-      iconUrl: "/game-icons/placeholder-icon.png"
+      iconUrl: "./game-icons/placeholder-icon.png"
     },
     {
       name: "placeholder",
-      iconUrl: "/game-icons/placeholder-icon.png"
+      iconUrl: "./game-icons/placeholder-icon.png"
     },
     {
       name: "placeholder",
-      iconUrl: "/game-icons/placeholder-icon.png"
+      iconUrl: "./game-icons/placeholder-icon.png"
     },
     {
       name: "placeholder",
-      iconUrl: "/game-icons/placeholder-icon.png"
+      iconUrl: "./game-icons/placeholder-icon.png"
     },
     {
       name: "placeholder",
-      iconUrl: "/game-icons/placeholder-icon.png"
+      iconUrl: "./game-icons/placeholder-icon.png"
     },
   ];
 

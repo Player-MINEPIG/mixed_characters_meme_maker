@@ -12,7 +12,7 @@ export const MemeEditor: React.FC = () => {
   const template: Template = {
     id: 'default',
     name: '默认模板',
-    imageUrl: '/templates/default.png',
+    imageUrl: './templates/default.png',
     width: 800,
     height: 600,
     areas: [
